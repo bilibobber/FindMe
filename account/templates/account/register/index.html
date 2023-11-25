@@ -1,0 +1,42 @@
+{% extends 'account/base.html' %}
+{% load static %}
+{% block title %}Вход в FindMe{% endblock %}
+
+{% block content %}
+<link href="{% static 'account/css/test.css' %}" rel="stylesheet">
+
+<div class="window">
+        <h2 class="window-h2">FindMe</h2>
+        <div class="window-els">
+            <div class="windows-els-div">
+                <div class="windows-els-div-h2">Вход</div>
+                <a href="#" class="windows-els-div-a">зарегистрироваться</a>
+            </div>
+            <div class="windows-els-div">
+                <div class="windows-els-div-icon"></div>
+                <div class="windows-els-div-icon"></div>
+                <div class="windows-els-div-icon"></div>
+            </div>
+            <div class="windows-els-div">
+                <form action="." method="post">
+                <div class="windows-els-div-input-div">
+                    <label for="r1" class="windows-els-div-input-div-label">Имя</label>
+                     {{ form.login }}
+                </div>
+                <div class="windows-els-div-input-div">
+                    <label for="r3" class="windows-els-div-input-div-label">Пароль</label>
+                     {{ form.password }}
+                </div>
+                {% csrf_token %}
+                <p><input type="submit" value="Log in"></p>
+                </form>
+            </div>
+            <div class="windows-els-div">
+                <p class="windows-els-div-p">Забыли пароль?</p>
+                <a href="#" class="windows-els-div-p">Восстановить</a>
+            </div>
+        </div>
+    </div>
+
+<script src="{% static 'account/scripts/main.js' %}"></script>
+{% endblock %}
