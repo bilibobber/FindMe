@@ -1,0 +1,129 @@
+{% extends 'dashboard/base.html' %}
+{% load static %}
+{% block title %}Главная страница{% endblock %}
+
+{% block content %}
+<link href="{% static 'dashboard/css/style.css' %}" rel="stylesheet">
+
+
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+    <div class="main">
+        <div class="main-info">
+            <h3 class="main-info-h3">Что такое FindMe?</h3>
+            <p class="main-info-p">FindMe - это некоммерческий проект, который помогает людям найти своих близких: детей, отцов, бабушек, любимую собаку... Здесь вы можете оставить анкету о потерявшемся человеке или питомце, а так же посодействовать в поиске другим людям. </p>
+        </div>
+    </div>
+
+    <div class="buttons">
+        <div class="buttons-button">Оставить анкету</div>
+        <div class="buttons-button">Посмотреть анкеты</div>
+        <div class="buttons-button">Я потерялся</div>
+    </div>
+
+    <div class="sovets">
+        <h2 class="sovets-h2">Что делать, если потерялся:</h2>
+        <div class="sovets-buttons">
+            <div class="sovets-buttons-button">Ребенок</div>
+            <div class="sovets-buttons-button">Взрослый</div>
+            <div class="sovets-buttons-button">Питомец</div>
+            <div class="sovets-buttons-button">Я</div>
+        </div>
+
+        <div class="sovets-sovet">
+            <img src="../pictures/большой круг.png" alt="" class="sovets-sovet-img">
+            <img src="../pictures/большой круг (1).png" alt="" class="sovets-sovet-img">
+            <img src="../pictures/большой круг (2).png" alt="" class="sovets-sovet-img">
+            <div class="sovets-sovet-div">
+                <div class="sovets-sovet-div-id">
+                    <h2>1</h2>
+                </div>
+                <div class="sovets-sovet-div-info">
+                    <h3 class="sh3">Попытайтесь вспомнить, где он был в последний раз.</h3>
+                    <p class="hp">Главное не паникуйте, обойдите место, где вы потеряли своего ребёнка, поспрашивайте прохожих. Если у ребёнка с собой есть телефон, то позвоните ему.</p>
+                </div>
+            </div>
+            <div class="sovets-sovet-div">
+                <div class="sovets-sovet-div-id">
+                    <h2>2</h2>
+                </div>
+                <div class="sovets-sovet-div-info">
+                    <h3 class="sh3">Обратитесь за помощью </h3>
+                    <p class="hp">Чем быстрее вы обратитесь в полицию, тем больше шанс что его найдут. Не ждите никаких 3-х дней, вам обязаны помочь в тот же день, в который вы пришли. Так же не стесняйтесь просить помощь у близких и у волонтёров.</p>
+                </div>
+            </div>
+            <div class="sovets-sovet-div">
+                <div class="sovets-sovet-div-id">
+                    <h2>3</h2>
+                </div>
+                <div class="sovets-sovet-div-info">
+                    <h3 class="sh3">Оставьте заявку на FindMe.</h3>
+                    <div class="f">
+                        <a href="#" class="clrgreen">Заполните анкету</a><p class="hp"> максимально подробно, приложите несколько фотографий и ждите. Волонтёры обязательно откликнуться на вашу заявку. Регулярно заходите на сайт и проверяйте сообщения, люди могут оправить вам какую-нибудь информацию или даже сообщить о нахождении ребёнка.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="sovets-sovet-div">
+                <div class="sovets-sovet-div-id">
+                    <h2>!</h2>
+                </div>
+                <div class="sovets-sovet-div-info">
+                    <h3 class="sh3">Заключение.</h3>
+                    <p class="hp">Не паникуйте, более 90% пропавших детей находят. Не ждите 3-х дней, обращайтесь в полицию сразу. Просите помощи у родных, у друзей, у волонтёров, а так же на нашем сайте. </p>
+                </div>
+            </div>
+        </div>
+        <div class="anketa">
+            <div class="anketa-up">
+                <h2 class="anketa-h2">Заполнить анкету</h2>
+                <div class="anketa-under-up">
+                    <h3 class="anketa-main-h3">Кто потерялся?</h3>
+                    <div class="anketa-main-btns">
+                        <div class="anketa-main-btns-button">Ребенок</div>
+                        <div class="anketa-main-btns-button">Взрослый</div>
+                        <div class="anketa-main-btns-button">Питомец</div>
+                    </div>
+                </div>
+            </div>
+            <div class="anketa-main">
+                <div class="anketa-main-section">
+                    <div class="anketa-main-inputs">
+                        <div class="anketa-main-inputs-div">
+                            <label class="anketa-main-inputs-div-label" for="a1">Тест</label>
+                            <input class="anketa-main-inputs-div-input" id="a1" type="text">
+                        </div>
+                        <div class="anketa-main-inputs-div">
+                            <label class="anketa-main-inputs-div-label" for="a2">Тест</label>
+                            <input class="anketa-main-inputs-div-input" id="a2" type="text">
+                        </div>
+                        <div class="anketa-main-inputs-div">
+                            <label class="anketa-main-inputs-div-label" for="a3">Тест</label>
+                            <input class="anketa-main-inputs-div-input" id="a3" type="text">
+                        </div>
+                        <div class="anketa-main-inputs-div">
+                            <label class="anketa-main-inputs-div-label" for="a4">Тест</label>
+                            <input class="anketa-main-inputs-div-input" id="a4" type="text">
+                        </div>
+                        <div class="anketa-main-inputs-div">
+                            <label class="anketa-main-inputs-div-label" for="a5">Тест</label>
+                            <input class="anketa-main-inputs-div-input" id="a5" type="text">
+                        </div>
+                    </div>
+                </div>
+                <div class="anketa-main-section">
+                    <div class="anketa-main-photo-div">
+                        <div class="anketa-main-photo-div-bphoto"></div>
+                        <div class="anketa-main-photo-div-div">
+                            <div class="anketa-main-photo-div-sphoto">*фото*</div>
+                            <div class="anketa-main-photo-div-sphoto">*фото*</div>
+                            <div class="anketa-main-photo-div-sphoto">*фото*</div>
+                        </div>
+                    </div>
+                    <div class="anketa-main-photo-div-okbutton">Отправить</div>
+                </div>
+            </div>
+    <script src="{% static 'dashboard/scripts/scripts.js' %}"></script>
+{% endblock %}
