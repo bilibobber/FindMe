@@ -4,5 +4,5 @@ from . import views # чтобы использовать views.(имя функ
 
 
 urlpatterns = [
-    path('index/', views.index, name='index')
+    path('index/', views.index, name='dashboard')
 ]

@@ -11,10 +11,10 @@
         <h2 class="header-h2">FindMe</h2>
         <div class="header-right">
             <div class="header-links">
-                <p class="header-links-p">Главная</p>
-                <p class="header-links-p">О нас</p>
-                <p class="header-links-p">Анкеты</p>
-                <p class="header-links-p">Поиск</p>
+                <p class="header-links-p"><a href="{% url 'dashboard' %}">Главная</a></p>
+                <p class="header-links-p"><a href="{% url 'dashboard' %}#discription">О нас</a></p>
+                <p class="header-links-p"><a href="{% url 'login' %}">Анкеты</a></p>
+                <p class="header-links-p"><a href="">Заполнить анкету</a></p>
             </div>
             <div class="header-message">
                 <p class="header-message-p">Сообщения</p>
